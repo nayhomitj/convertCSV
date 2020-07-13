@@ -1,0 +1,38 @@
+<div [id]="controlID" *ngIf="!_hide" [@fadeOut]>
+  <div *ngIf="typeMessage === 'error'" class="wrapper clearfix">
+    <div class="alert alert-danger">
+      <em class="fa fa-warning"></em>
+      <span class="msg">{{ _text }}</span>
+      <div *ngIf="closable" class="close-button" (click)="hideMessage()">
+        <em class="fa fa-close"></em>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="typeMessage === 'success'" class="wrapper clearfix">
+    <div class="alert alert-success">
+      <em class="fa fa-check"></em>
+      <span class="msg">{{ _text }}</span>
+      <div *ngIf="closable" class="close-button" (click)="hideMessage()">
+        <em class="fa fa-close"></em>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="typeMessage === 'warning'" class="wrapper clearfix">
+    <div class="alert alert-warning">
+      <em class="fa fa-check"></em>
+      <span class="msg">{{ _text }}</span>
+      <div *ngIf="closable" class="close-button" (click)="hideMessage()">
+        <em class="fa fa-close"></em>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="typeMessage === 'info'" class="wrapper clearfix">
+    <div class="alert alert-info">
+      <em class="fa fa-info"></em>
+      <span class="msg">{{ _text }}</span>
+      <div *ngIf="closable" class="close-button" (click)="hideMessage()">
+        <em class="fa fa-close"></em>
+      </div>
+    </div>
+    </div>
+  </div>

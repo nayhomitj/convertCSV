@@ -1,0 +1,25 @@
+<section>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4" style="font-family: cursive;color: #ff8000;font-style: oblique;font-size: 50px;">
+        Conversion a formato soportado por wordpress </h1>
+      <p class="lead">Esta aplicacion convierte formato csv a formato xls con estructura de BD de WordPress.</p>
+    </div>
+  </div>
+  <div style="margin: 1rem;text-align: center;">
+    <amm-message [(msg)]="successMessage" typeMessage="success"></amm-message>
+    <amm-message [(msg)]="errorMessage" typeMessage="error"></amm-message>
+
+    <div class="custom-file">
+      <input type="file" name="upload" (change)="fileChanged($event)" accept=".csv" style="color:#ff8000">
+    </div>
+
+    <div style="margin: 30px 30px 60px">
+      <button type="button" class="btn btn-primary"
+        style="background-color: #ff8000;font-family: cursive;border-color: #ff8000;font-size: 17px;width: 200px;"
+        (click)="adjuntar($event)">Convertir</button>
+    </div>
+
+
+  </div>
+</section>

@@ -1,0 +1,19 @@
+.center {
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 50%;
+}
+section {
+  margin: 35px 30px 60px;
+  z-index: 40;
+}
+
+.buttonConvert {
+  color: #fff;
+  background-color: #ff8000;
+  font-family: cursive;
+  border-color: #ff8000;
+  font-size: 17px;
+  width: 200px;
+}
+
